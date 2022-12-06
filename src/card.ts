@@ -6,12 +6,12 @@ export interface Card {
      * The id of the card
      */
     id: number;
-    
+
     /**
      * The path to the icon for the card
      */
     icon?: string;
-    
+
     /**
      * The title of the card
      */
