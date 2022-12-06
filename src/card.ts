@@ -5,7 +5,7 @@ export interface Card {
     /**
      * The path to the icon for the card
      */
-    icon: string;
+    icon?: string;
     
     /**
      * The title of the card
@@ -20,22 +20,18 @@ export interface Card {
 
 export const cards = [
     {
-        icon: '',
         title: 'About Me',
         description: 'Learn more about me',
     },
     {
-        icon: '',
         title: 'Coding Projects',
         description: 'A look into my coding projects',
     },
     {
-        icon: '',
         title: 'Contact Info',
         description: 'How to reach me',
     },
     {
-        icon: '',
         title: 'Blog',
         description: 'Read my personal thoughts',
     }
