@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { cards } from 'src/card';
+import { Card, cards } from 'src/card';
 
 @Component({
   selector: 'home-page-component',
@@ -7,7 +7,7 @@ import { cards } from 'src/card';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-  cards: unknown;
+  cards: Card[];
 
   ngOnInit() {
     this.cards = cards;
