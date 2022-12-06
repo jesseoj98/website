@@ -44,4 +44,4 @@ export const cards = [
         title: 'Blog',
         description: 'Read my personal thoughts',
     }
-];
+] as Card[];
