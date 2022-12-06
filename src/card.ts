@@ -17,3 +17,26 @@ export interface Card {
      */
     description: string;
 }
+
+export const cards = [
+    {
+        icon: '',
+        title: 'About Me',
+        description: 'Learn more about me',
+    },
+    {
+        icon: '',
+        title: 'Coding Projects',
+        description: 'A look into my coding projects',
+    },
+    {
+        icon: '',
+        title: 'Contact Info',
+        description: 'How to reach me',
+    },
+    {
+        icon: '',
+        title: 'Blog',
+        description: 'Read my personal thoughts',
+    }
+];
