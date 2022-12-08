@@ -13,6 +13,7 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { BlogComponent } from './blog/blog.component';
 import { ResumeComponent } from './resume/resume.component';
 import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RouterModule } from '@angular/router';
     CodingProjectsComponent,
     ContactInfoComponent,
     BlogComponent,
-    ResumeComponent
+    ResumeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
