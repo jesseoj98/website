@@ -12,6 +12,7 @@ import { CodingProjectsComponent } from './coding-projects/coding-projects.compo
 import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { BlogComponent } from './blog/blog.component';
 import { ResumeComponent } from './resume/resume.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
