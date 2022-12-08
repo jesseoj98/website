@@ -40,6 +40,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
       { path: 'contact', component: ContactInfoComponent },
       { path: 'resume', component: ResumeComponent },
       {path: '', redirectTo: '/home', pathMatch: 'full'},
+      { path: '**', component: PageNotFoundComponent },
     ])
   ],
   providers: [],
