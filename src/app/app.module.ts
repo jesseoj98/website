@@ -37,6 +37,7 @@ import { RouterModule } from '@angular/router';
       { path: 'coding', component: CodingProjectsComponent },
       { path: 'contact', component: ContactInfoComponent },
       { path: 'resume', component: ResumeComponent },
+      {path: '', redirectTo: '/home', pathMatch: 'full'},
     ])
   ],
   providers: [],
