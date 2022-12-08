@@ -29,7 +29,15 @@ import { RouterModule } from '@angular/router';
     BrowserAnimationsModule,
     MatCardModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule.forRoot([
+      { path: '', component: HomePageComponent },
+      { path: 'about-me', component: AboutMeComponent },
+      { path: 'blog', component: BlogComponent },
+      { path: 'coding-projects', component: CodingProjectsComponent },
+      { path: 'contact-info', component: ContactInfoComponent },
+      { path: 'resume', component: ResumeComponent },
+    ])
   ],
   providers: [],
   bootstrap: [HomePageComponent]
