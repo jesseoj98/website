@@ -23,7 +23,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ContactInfoComponent,
     BlogComponent,
     ResumeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,9 +41,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
       { path: 'resume', component: ResumeComponent },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: '**', component: PageNotFoundComponent },
-    ])
+    ]),
   ],
   providers: [],
-  bootstrap: [HomePageComponent]
+  bootstrap: [HomePageComponent],
 })
-export class AppModule { }
+export class AppModule {}
