@@ -31,7 +31,7 @@ import { RouterModule } from '@angular/router';
     MatToolbarModule,
     FlexLayoutModule,
     RouterModule.forRoot([
-      { path: '', component: HomePageComponent },
+      { path: 'home', component: HomePageComponent },
       { path: 'about-me', component: AboutMeComponent },
       { path: 'blog', component: BlogComponent },
       { path: 'coding-projects', component: CodingProjectsComponent },
