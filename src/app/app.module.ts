@@ -32,10 +32,10 @@ import { RouterModule } from '@angular/router';
     FlexLayoutModule,
     RouterModule.forRoot([
       { path: 'home', component: HomePageComponent },
-      { path: 'about-me', component: AboutMeComponent },
+      { path: 'about', component: AboutMeComponent },
       { path: 'blog', component: BlogComponent },
-      { path: 'coding-projects', component: CodingProjectsComponent },
-      { path: 'contact-info', component: ContactInfoComponent },
+      { path: 'coding', component: CodingProjectsComponent },
+      { path: 'contact', component: ContactInfoComponent },
       { path: 'resume', component: ResumeComponent },
     ])
   ],
