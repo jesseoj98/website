@@ -12,6 +12,8 @@ import { CodingProjectsComponent } from './coding-projects/coding-projects.compo
 import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { BlogComponent } from './blog/blog.component';
 import { ResumeComponent } from './resume/resume.component';
+import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { ResumeComponent } from './resume/resume.component';
     CodingProjectsComponent,
     ContactInfoComponent,
     BlogComponent,
-    ResumeComponent
+    ResumeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,17 @@ import { ResumeComponent } from './resume/resume.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule.forRoot([
+      { path: 'home', component: HomePageComponent },
+      { path: 'about', component: AboutMeComponent },
+      { path: 'blog', component: BlogComponent },
+      { path: 'coding', component: CodingProjectsComponent },
+      { path: 'contact', component: ContactInfoComponent },
+      { path: 'resume', component: ResumeComponent },
+      { path: '', redirectTo: '/home', pathMatch: 'full' },
+      { path: '**', component: PageNotFoundComponent },
+    ])
   ],
   providers: [],
   bootstrap: [HomePageComponent]
