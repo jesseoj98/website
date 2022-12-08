@@ -1,17 +1,17 @@
 <p>
-    <mat-toolbar>
-        <span>Jesse Jones</span>
-    </mat-toolbar>
+  <mat-toolbar>
+    <span>Jesse Jones</span>
+  </mat-toolbar>
 </p>
 
 <div div fxLayout="column" fxLayoutAlign="space-around center">
-    <div *ngFor="let card of cards">
-        <mat-card>
-            <!-- <img mat-card-image> -->
-            <mat-card-title>{{ card.title }}</mat-card-title>
-            <mat-card-subtitle>{{ card.description }}</mat-card-subtitle>
-        </mat-card>
-    </div>
+  <div *ngFor="let card of cards">
+    <mat-card>
+      <!-- <img mat-card-image> -->
+      <mat-card-title>{{ card.title }}</mat-card-title>
+      <mat-card-subtitle>{{ card.description }}</mat-card-subtitle>
+    </mat-card>
+  </div>
 </div>
 
 <router-outlet></router-outlet>
