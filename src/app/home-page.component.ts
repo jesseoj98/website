@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Card, cards } from 'src/card';
+import { MatDialog } from '@angular/material';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { CodingProjectsComponent } from './coding-projects/coding-projects.component';
+import { ContactInfoComponent } from './contact-info/contact-info.component';
+import { BlogComponent } from './blog/blog.component';
 
 @Component({
   selector: 'home-page-component',
@@ -8,8 +13,24 @@ import { Card, cards } from 'src/card';
 })
 export class HomePageComponent implements OnInit {
   cards: Card[];
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit() {
     this.cards = cards;
+  }
+
+  openModal(modalId: number): void {
+    switch (modalId) {
+      case 0:
+        this.dialog.open(AboutMeComponent);
+      case 1:
+        this.dialog.open(CodingProjectsComponent);
+      case 2:
+        this.dialog.open(ContactInfoComponent);
+      case 3:
+        this.dialog.open(BlogComponent);
+      default:
+        return;
+    }
   }
 }
