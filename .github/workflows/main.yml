@@ -2,12 +2,26 @@ name: github-actions
 run-name: $GitHub Actions
 on: [push]
 jobs:
-  check-bats-version:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+          node-version: '12.x'
+      - uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+      - name: Build
+        run: |
+          npm install
+          npm run-script deploy
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist/angular-ci-cd
