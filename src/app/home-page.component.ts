@@ -34,7 +34,7 @@ export class HomePageComponent implements OnInit {
         this.dialog.open(BlogComponent);
         break;
       default:
-        return;
+        break;
     }
   }
 }
