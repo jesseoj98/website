@@ -37,7 +37,7 @@ export const cards = [
   {
     id: 2,
     title: 'Contact Info',
-    description: 'How to reach me',
+    description: 'How to get in touch',
   },
   {
     id: 3,
