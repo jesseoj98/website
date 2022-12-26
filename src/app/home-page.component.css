@@ -1,3 +1,40 @@
-.card {
-  max-width: 200px;
+#home-page {
+  height: 100%;
+}
+
+.accent-color {
+  background-color: #e0e0e0;
+}
+
+.header-font {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.card-dimension {
+  height: 7rem;
+  width: 11rem;
+  padding: 1.25rem;
+  margin: 6rem;
+}
+
+.card-title-font {
+  font-size: large;
+  font-weight: 550;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.card-subtitle-font {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: center;
+  height: 48rem;
 }
