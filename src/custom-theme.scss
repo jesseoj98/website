@@ -8,11 +8,44 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+$dark-theme: (
+    50: #FAFAFA,
+    100: #F5F5F5,
+    200: #EEEEEE,
+    300: #E0E0E0,
+    400: #BDBDBD,
+    500: #9E9E9E,
+    600: #757575,
+    700: #616161,
+    800: #424242,
+    900: #212121,
+    A100: #F5F5F5,
+    A200: #EEEEEE,
+    A400: #BDBDBD,
+    A700: #616161,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: $black-87-opacity,
+        A200: $black-87-opacity,
+        A400: $black-87-opacity,
+        A700: white,
+    )
+);
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$website-primary: mat-palette($mat-indigo);
-$website-accent: mat-palette($mat-pink, A200, A100, A400);
+$website-primary: mat-palette($dark-theme);
+$website-accent: mat-palette($dark-theme, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $website-warn: mat-palette($mat-red);
