@@ -37,4 +37,12 @@ export class HomePageComponent implements OnInit {
         break;
     }
   }
+
+  private celsiusToFahrenheit(fahrenheit: number): number {
+    return Math.round(fahrenheit * (9 / 5) + 32);
+  }
+
+  private fahrenheitToCelsius(celsius: number): number {
+    return Math.round((celsius - 32) * (5 / 9));
+  }
 }
