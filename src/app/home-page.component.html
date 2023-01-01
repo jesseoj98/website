@@ -7,17 +7,22 @@
 
   <div class="flex-container">
     <ng-container *ngFor="let card of cards">
-      <mat-card
-        class="card-dimension accent-color"
-        (click)="openModal(card.id)"
-      >
-        <mat-card-title class="card-title-font"
-          >{{ card.title }}<br
-        /></mat-card-title>
-        <img mat-card-image src="{{ card?.icon }}" width="64" height="64"/>
-        <mat-card-subtitle class="card-subtitle-font">{{
-          card.description
-        }}</mat-card-subtitle>
+      <mat-card class="card-dimension accent-color" (click)="openModal(card.id)"
+        ><div
+        class="image">
+          <img
+            mat-card-image
+            src="{{ card?.icon }}"
+            width="64"
+            height="64"
+          />
+        </div>
+        <mat-card-title class="card-title-font">{{
+          card.title
+        }}</mat-card-title>
+        <mat-card-content>
+          <p class="card-subtitle-font">{{ card.description }}</p>
+        </mat-card-content>
       </mat-card>
     </ng-container>
   </div>
