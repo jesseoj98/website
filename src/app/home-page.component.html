@@ -11,10 +11,10 @@
         class="card-dimension accent-color"
         (click)="openModal(card.id)"
       >
-        <!-- <img mat-card-image> -->
         <mat-card-title class="card-title-font"
           >{{ card.title }}<br
         /></mat-card-title>
+        <img mat-card-image src="{{ card?.icon }}" width="64" height="64"/>
         <mat-card-subtitle class="card-subtitle-font">{{
           card.description
         }}</mat-card-subtitle>

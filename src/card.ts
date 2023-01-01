@@ -26,21 +26,25 @@ export interface Card {
 export const cards = [
   {
     id: 0,
+    icon: 'assets/info.png',
     title: 'About Me',
     description: 'Learn more about me',
   },
   {
     id: 1,
+    icon: 'assets/coding.png',
     title: 'Coding Projects',
     description: 'A look into my coding projects',
   },
   {
     id: 2,
+    icon: 'assets/contact.png',
     title: 'Contact Info',
     description: 'How to get in touch',
   },
   {
     id: 3,
+    icon: 'assets/blog.png',
     title: 'Blog',
     description: 'Read my personal thoughts',
   },
