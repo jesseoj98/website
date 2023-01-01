@@ -15,7 +15,7 @@ export class HomePageComponent implements OnInit {
   cards: Card[];
   constructor(public dialog: MatDialog) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.cards = cards;
   }
 
