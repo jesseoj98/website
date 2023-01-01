@@ -28,7 +28,7 @@ export const cards = [
     id: 0,
     icon: 'assets/info.png',
     title: 'About Me',
-    description: 'Learn more about me',
+    description: 'Learn more information about me',
   },
   {
     id: 1,
@@ -40,7 +40,7 @@ export const cards = [
     id: 2,
     icon: 'assets/contact.png',
     title: 'Contact Info',
-    description: 'How to get in touch',
+    description: 'How to get in touch with me',
   },
   {
     id: 3,
