@@ -50,4 +50,11 @@ export const cards = [
     source: 'Contact icons created by Cuputo - Flaticon https://www.flaticon.com/free-icons/contact',
     description: 'How to get in touch with me',
   },
+  {
+    id: 3,
+    icon: 'assets/resume.png',
+    title: 'Resume',
+    source: 'Portfolio icons created by Freepik - Flaticon https://www.flaticon.com/free-icons/portfolio',
+    description: 'Click here to view my resume',
+  }
 ] as Card[];

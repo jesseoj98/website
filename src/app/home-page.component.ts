@@ -29,6 +29,9 @@ export class HomePageComponent implements OnInit {
       case 2:
         this.dialog.open(ContactInfoComponent);
         break;
+      case 3:
+        window.open('assets/resume.pdf', '_blank');
+        break;
       default:
         break;
     }
