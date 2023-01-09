@@ -27,3 +27,8 @@ a {
 a {
   outline: none;
 }
+
+.close-button {
+  float: right;
+  outline: none;
+}

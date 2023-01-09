@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
 import { AboutMeComponent } from 'src/app/about-me/about-me.component';
 import { CodingProjectsComponent } from 'src/app/coding-projects/coding-projects.component';
 import { ContactInfoComponent } from 'src/app/contact-info/contact-info.component';
@@ -30,6 +31,7 @@ import { PageNotFoundComponent } from 'src/app/page-not-found/page-not-found.com
     MatCardModule,
     MatToolbarModule,
     MatDialogModule,
+    MatButtonModule,
     RouterModule.forRoot([]),
   ],
   providers: [],
