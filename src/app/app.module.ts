@@ -11,9 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { AboutMeComponent } from 'src/app/about-me/about-me.component';
 import { CodingProjectsComponent } from 'src/app/coding-projects/coding-projects.component';
 import { ContactInfoComponent } from 'src/app/contact-info/contact-info.component';
-import { ResumeComponent } from 'src/app/resume/resume.component';
 import { RouterModule } from '@angular/router';
-import { PageNotFoundComponent } from 'src/app/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +19,6 @@ import { PageNotFoundComponent } from 'src/app/page-not-found/page-not-found.com
     AboutMeComponent,
     CodingProjectsComponent,
     ContactInfoComponent,
-    ResumeComponent,
-    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
