@@ -64,6 +64,6 @@ export const cards = [
     title: 'Resume',
     source: 'https://www.flaticon.com/free-icons/portfolio',
     alt: 'Portfolio icons created by Freepik - Flaticon',
-    description: 'Click here to view my resume',
+    description: 'Have a look at my experience',
   },
 ] as Card[];
