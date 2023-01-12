@@ -12,16 +12,12 @@
 }
 
 .card-dimension {
-  height: 12rem;
-  width: 12rem;
+  height: auto;
+  width: 13.75rem;
 }
 
 .image {
-  align-items: center;
-  display: flex;
-  height: 8.75rem;
-  justify-content: center;
-  overflow: hidden;
+  height: 5.75rem;
 }
 
 .card-title-font {
@@ -33,6 +29,18 @@
 
 .card-subtitle-font {
   text-align: center;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.card-button-font {
+  font-weight: 550;
+  font-size: large;
 }
 
 .flex-container {
