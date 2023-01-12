@@ -9,13 +9,14 @@
     <ng-container *ngFor="let card of cards">
       <mat-card class="card-dimension accent-color"
         ><div class="image center">
-          <img
-            mat-card-image
-            src="{{ card?.icon }}"
-            title="{{ card?.source }}"
-            width="64"
-            height="64"
-          />
+          <a
+            href="{{ card?.source }}"
+            title="{{ card?.alt }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img mat-card-image src="{{ card?.icon }}" width="64" height="64"
+          /></a>
         </div>
         <mat-card-title class="card-title-font">{{
           card.title
