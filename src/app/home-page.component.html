@@ -8,8 +8,7 @@
   <div class="flex-container">
     <ng-container *ngFor="let card of cards">
       <mat-card class="card-dimension accent-color" (click)="openModal(card.id)"
-        ><div
-        class="image">
+        ><div class="image">
           <img
             mat-card-image
             src="{{ card?.icon }}"
