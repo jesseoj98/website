@@ -30,7 +30,9 @@ export class HomePageComponent implements OnInit {
         this.dialog.open(ContactInfoComponent);
         break;
       case 3:
-        window.open('assets/resume.pdf', '_blank');
+        window.alert(
+          "Resume is currently unavailable and being worked on since I'm not open to new opportunities at the moment!"
+        );
         break;
       default:
         break;
@@ -43,5 +45,9 @@ export class HomePageComponent implements OnInit {
 
   private fahrenheitToCelsius(celsius: number): number {
     return Math.round((celsius - 32) * (5 / 9));
+  }
+
+  retrieveButtonText(cardId: number): string {
+    return cardId === 3 ? 'TBA' : 'VIEW';
   }
 }

@@ -31,7 +31,7 @@
               class="card-button-font"
               (click)="openModal(card.id)"
             >
-              VIEW
+              {{ retrieveButtonText(card.id) }}
             </button>
           </mat-card-actions>
         </div>
