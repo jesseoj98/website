@@ -1,12 +1,9 @@
+import { Item } from './item';
+
 /**
  * Software interface defines information about a programming software
  */
-export interface Software {
-  /**
-   * The name of the programming software
-   */
-  name: string;
-}
+export interface Software extends Item {}
 
 export const softwares = [
   {

@@ -1,12 +1,9 @@
+import { Item } from './item';
+
 /**
  * Language interface defines information about a programming language
  */
-export interface Language {
-  /**
-   * The name of the programming language
-   */
-  name: string;
-}
+export interface Language extends Item {}
 
 export const languages = [
   {

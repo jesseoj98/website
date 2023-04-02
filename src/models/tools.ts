@@ -1,12 +1,9 @@
+import { Item } from './item';
+
 /**
  * Tool interface defines information about a programming tool
  */
-export interface Tool {
-  /**
-   * The name of the programming tool
-   */
-  name: string;
-}
+export interface Tool extends Item {}
 
 export const tools = [
   {

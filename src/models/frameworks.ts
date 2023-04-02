@@ -1,12 +1,9 @@
+import { Item } from './item';
+
 /**
  * Framework interface defines information about a framework
  */
-export interface Framework {
-  /**
-   * The name of the framework
-   */
-  name: string;
-}
+export interface Framework extends Item {}
 
 export const frameworks = [
   {

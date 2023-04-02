@@ -1,12 +1,9 @@
+import { Item } from './item';
+
 /**
  * Technology interface defines information about a programming technology
  */
-export interface Technology {
-  /**
-   * The name of the programming technology
-   */
-  name: string;
-}
+export interface Technology extends Item {}
 
 export const technologies = [
   {

@@ -1,12 +1,9 @@
+import { Item } from './item';
+
 /**
  * Platform interface defines information about a programming platform
  */
-export interface Platform {
-  /**
-   * The name of the programming platform
-   */
-  name: string;
-}
+export interface Platform extends Item {}
 
 export const platforms = [
   {
