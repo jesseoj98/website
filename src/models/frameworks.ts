@@ -10,7 +10,7 @@ export const frameworks = [
     name: 'Angular & NodeJS',
   },
   {
-    name: 'Spring Boot',
+    name: 'Spring Boot / .NET',
   },
   {
     name: 'Spring Batch',

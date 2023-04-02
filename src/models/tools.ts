@@ -7,7 +7,7 @@ export interface Tool extends Item {}
 
 export const tools = [
   {
-    name: 'Git',
+    name: 'Git', // I'd argue that Git isn't a skill, but w/e
   },
   {
     name: 'Jenkins',
@@ -16,6 +16,9 @@ export const tools = [
     name: 'SonarQube',
   },
   {
-    name: 'Agile / Scrum',
+    name: 'Agile / Scrum Methodologies',
+  },
+  {
+    name: 'SOLID Principles',
   },
 ] as Tool[];

@@ -7,7 +7,7 @@ export interface Language extends Item {}
 
 export const languages = [
   {
-    name: 'Java',
+    name: 'Java / C#',
   },
   {
     name: 'HTML / CSS / SCSS',
