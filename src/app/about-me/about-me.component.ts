@@ -4,7 +4,7 @@ import { Framework, frameworks } from 'src/frameworks';
 import { Language, languages } from 'src/languages';
 import { Platform, platforms } from 'src/platforms';
 import { Software, softwares } from 'src/softwares';
-import { technologies, Technology } from 'src/technologies';
+import { Technology, technologies } from 'src/technologies';
 import { Tool, tools } from 'src/tools';
 import { CodingProjectsComponent } from '../coding-projects/coding-projects.component';
 import { ContactInfoComponent } from '../contact-info/contact-info.component';
