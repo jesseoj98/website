@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Card, cards } from 'src/card';
+import { Card, cards } from 'src/models/card';
 import { MatDialog } from '@angular/material/dialog';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { CodingProjectsComponent } from './coding-projects/coding-projects.component';

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Framework, frameworks } from 'src/frameworks';
-import { Language, languages } from 'src/languages';
-import { Platform, platforms } from 'src/platforms';
-import { Software, softwares } from 'src/softwares';
-import { Technology, technologies } from 'src/technologies';
-import { Tool, tools } from 'src/tools';
+import { Framework, frameworks } from 'src/models/frameworks';
+import { Language, languages } from 'src/models/languages';
+import { Platform, platforms } from 'src/models/platforms';
+import { Software, softwares } from 'src/models/softwares';
+import { Technology, technologies } from 'src/models/technologies';
+import { Tool, tools } from 'src/models/tools';
 import { CodingProjectsComponent } from '../coding-projects/coding-projects.component';
 import { ContactInfoComponent } from '../contact-info/contact-info.component';
 
