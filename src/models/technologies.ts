@@ -7,15 +7,12 @@ export interface Technology extends Item {}
 
 export const technologies = [
   {
-    name: 'Eclipse',
+    name: 'JUnit',
   },
   {
-    name: 'Postman',
+    name: 'ELK Stack',
   },
   {
-    name: 'Visual Studio',
-  },
-  {
-    name: 'Visual Studio Code',
+    name: 'RESTful APIs',
   },
 ] as Technology[];
