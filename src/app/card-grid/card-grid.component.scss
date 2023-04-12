@@ -1,0 +1,31 @@
+.card-dimension {
+  height: auto;
+  width: 13.75rem;
+}
+
+.image {
+  height: 5.75rem;
+}
+
+.card-title-font {
+  font-size: large;
+  font-weight: 550;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.card-subtitle-font {
+  text-align: center;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.card-button-font {
+  font-weight: 550;
+  font-size: large;
+}

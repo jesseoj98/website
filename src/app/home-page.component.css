@@ -1,56 +1,12 @@
-#home-page {
-  height: 100%;
-}
-
-.accent-color {
-  background-color: #e0e0e0;
-}
-
-.header-font {
-  font-size: larger;
-  font-weight: 600;
-}
-
-.card-dimension {
-  height: auto;
-  width: 13.75rem;
-}
-
-.image {
-  height: 5.75rem;
-}
-
-.card-title-font {
-  font-size: large;
-  font-weight: 550;
-  text-decoration: underline;
-  text-align: center;
-}
-
-.card-subtitle-font {
-  text-align: center;
-}
-
-.center {
-  justify-content: center;
-  align-items: center;
+.home-page-container {
   display: flex;
-  text-align: center;
+  flex-direction: column;
 }
 
-.card-button-font {
-  font-weight: 550;
-  font-size: large;
+.navigation-bar {
+  flex-grow: 1;
 }
 
-.flex-container {
-  display: flex;
-  /* flex-direction: row;
-  flex-wrap: wrap; */
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: center;
-  height: 48rem;
-  gap: 32px;
-  width: calc(100% - 20px);
+.card-grid {
+  flex-grow: 5;
 }

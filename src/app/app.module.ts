@@ -13,6 +13,8 @@ import { AboutMeComponent } from 'src/app/about-me/about-me.component';
 import { CodingProjectsComponent } from 'src/app/coding-projects/coding-projects.component';
 import { ContactInfoComponent } from 'src/app/contact-info/contact-info.component';
 import { RouterModule } from '@angular/router';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { CardGridComponent } from './card-grid/card-grid.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { RouterModule } from '@angular/router';
     AboutMeComponent,
     CodingProjectsComponent,
     ContactInfoComponent,
+    NavigationBarComponent,
+    CardGridComponent,
   ],
   imports: [
     BrowserModule,

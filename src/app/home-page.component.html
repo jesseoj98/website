@@ -1,43 +1,9 @@
-<div id="home-page">
-  <p>
-    <mat-toolbar class="accent-color">
-      <span class="header-font">Jesse Jones</span>
-    </mat-toolbar>
-  </p>
-
-  <div class="flex-container">
-    <ng-container *ngFor="let card of cards">
-      <mat-card class="card-dimension accent-color"
-        ><div class="image center">
-          <a
-            href="{{ card?.source }}"
-            title="{{ card?.alt }}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img mat-card-image src="{{ card?.icon }}" width="64" height="64"
-          /></a>
-        </div>
-        <mat-card-title class="card-title-font">{{
-          card.title
-        }}</mat-card-title>
-        <mat-card-content>
-          <p class="card-subtitle-font">{{ card.description }}</p>
-        </mat-card-content>
-        <div class="center">
-          <mat-card-actions>
-            <button
-              mat-button
-              class="card-button-font"
-              (click)="openModal(card.id)"
-            >
-              {{ retrieveButtonText(card.id) }}
-            </button>
-          </mat-card-actions>
-        </div>
-      </mat-card>
-    </ng-container>
+<div id="home-page" class="home-page-container">
+  <div class="navigation-bar">
+    <navigation-bar></navigation-bar>
   </div>
 
-  <router-outlet></router-outlet>
+  <div class="card-grid">
+    <card-grid></card-grid>
+  </div>
 </div>
