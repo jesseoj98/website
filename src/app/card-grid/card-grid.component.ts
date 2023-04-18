@@ -8,7 +8,7 @@ import { ContactInfoComponent } from '../contact-info/contact-info.component';
 @Component({
   selector: 'card-grid',
   templateUrl: './card-grid.component.html',
-  styleUrls: ['./card-grid.component.css'],
+  styleUrls: ['./card-grid.component.scss'],
 })
 export class CardGridComponent {
   cards: Card[];
