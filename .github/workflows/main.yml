@@ -1,8 +1,10 @@
 name: github-actions
 run-name: $GitHub Actions
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
-  if: github.ref == 'refs/heads/main'
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
